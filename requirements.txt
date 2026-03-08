@@ -1,7 +1,6 @@
 # Data Processing
 pandas
 numpy
-glob
 
 # Visualization
 matplotlib
