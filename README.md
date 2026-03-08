@@ -23,13 +23,14 @@ Air Quality Dataset dari UCI Machine Learning Repository berisi data kualitas ud
 Submission/
 ├── dashboard/
 │   ├── dashboard.py          # Streamlit dashboard
-│   └── README.md             # Dashboard documentation
 ├── data/
-│   ├── PRSA_Data_*.csv       # Raw data (12 stasiun)
-│   └── cleaned_air_quality.csv  # Processed data (generated from notebook)
-├── notebook.ipynb            # Jupyter notebook analisis lengkap
+│   ├── PRSA_Data_*.csv       # Raw data
+│   └── cleaned_air_quality.csv  # Processed data
+├── notebook.ipynb            # Jupyter notebook
 ├── requirements.txt          # Python dependencies
+├── url.txt                   # url streamlit cloud
 └── README.md                 # Dokumentasi proyek
+
 ```
 
 ## 🚀 Setup & Installation
@@ -125,11 +126,6 @@ Dashboard dapat diakses online di: **[Coming Soon - Streamlit Cloud]**
 - **Dashboard**: Streamlit
 - **Analysis**: SciPy untuk statistical testing
 
-## 👤 Author
-
-**Nama**: [Masukkan Nama Anda]  
-**Email**: [Masukkan Email Anda]  
-**Dicoding ID**: [Masukkan ID Dicoding Anda]
 
 ## 📚 Data Source
 
