@@ -1,0 +1,20 @@
+# Data Processing
+pandas
+numpy
+glob
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Geospatial
+folium
+streamlit-folium
+
+# Dashboard
+streamlit
+
+# Utilities
+openpyxl
+scipy
