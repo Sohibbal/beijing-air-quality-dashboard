@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 import folium
 from streamlit_folium import folium_static
 import warnings
+import os
 warnings.filterwarnings('ignore')
 
 # Page configuration
@@ -57,12 +58,15 @@ st.markdown("""
 # Load data function
 @st.cache_data
 def load_data():
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(current_dir, '..', 'data', 'cleaned_air_quality.csv')
+    
     try:
-        df = pd.read_csv('../data/cleaned_air_quality.csv')
+        df = pd.read_csv(file_path)
         df['datetime'] = pd.to_datetime(df['datetime'])
         return df
     except FileNotFoundError:
-        st.error("❌ Data file not found. Please run the notebook first.")
+        st.error(f"❌ Data file not found at: {file_path}")
         st.stop()
 
 df = load_data()
